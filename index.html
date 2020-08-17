@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--질문 할것: 푸터 바로 열리는게 부드럽게안됨-->
+
+<head>
+    <!--overflow:scroll 을주면됨 버튼에다가 ul li로 만듬-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="../portfolio/js/jquery-3.4.1.min.js"></script>
+    <script src="../portfolio/js/jquery-ui.min.js"></script>
+
+    <title>1차 개인 포트폴리오</title>
+</head>
+
+<body>
+    <!--후원하기 고정 버튼-->
+    <a class="quick_out_button">
+        <img src="images/quick_out.png" alt="후원하기">
+    </a>
+
+    <!--좌측 메뉴 버튼-->
+    <ul class="now_list">
+        <li class="now_page"><a href="#ban"></a></li>
+        <li><a href="#cont1"></a></li>
+        <li><a href="#cont2"></a></li>
+        <li><a href="#cont3"></a></li>
+        <li><a href="#info"></a></li>
+    </ul>
+    <header class="top">
+        <!-- top_white-->
+
+        <div class="inbox2" id="top">
+            <ul class="fbx header_wrap">
+                <li>
+                    <span class="header_logo">
+                        <img src="images/header_logo_white.png" alt="상단로고">
+                        <img src="images/header_logo.png" alt="상단로고">
+
+
+                    </span>
+                </li>
+                <li>
+                    <ul class="gnb">
+                        <li>
+                            <a href="#">기관</a>
+                            <div class="smenu_wrap">
+                                <ol class="smenu">
+                                    <li><a href="#">세이브 더 칠드런 100주년</a></li>
+                                    <li><a href="#">세이브더칠드런 정신</a></li>
+                                    <li><a href="#">연혁/조직</a></li>
+                                    <li><a href="#">투명경영</a></li>
+                                    <li><a href="#">재정보고</a></li>
+                                    <li><a href="#">인사말</a></li>
+                                    <li><a href="#">홍보대사</a></li>
+                                    <li><a href="#">인재채용</a></li>
+                                </ol>
+                            </div>
+                            <style>
+                                
+
+                            </style>
+                        </li>
+                        <li>
+                            <a href="#">사업</a>
+                        </li>
+                        <li>
+                            <a href="#">후원</a>
+                        </li>
+                        <li>
+                            <a href="#">참여</a>
+                        </li>
+                        <li>
+                            <a href="#">소식</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ol class="header_right_box">
+                        <li>
+                            <div class="login_on">
+                                <img src="images/login_on_white.png">
+                                <img src="images/login_on.png">
+
+                                <span>로그인</span>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="search_icon_on">
+                                <img src="images/search_icon_white.png">
+                                <img src="images/search_icon.png">
+                            </div>
+
+                        </li>
+
+                    </ol>
+                </li>
+            </ul>
+
+
+        </div>
+    </header>
+    <!--상단 영역 종료-->
+    <!--메인 비주얼 영역 시작-->
+    <div class="page ban">
+        <div class="inbox2 main_visual_area" id="ban">
+            <div class="main_title">
+                <h1>우리 엄마 아프지<br>말고 오래오래...</h1>
+                <p>어느날 갑자기 걸을 수 없게 된 엄마와 고은이 이야기...</p>
+                <a href="#" class="main_visual_show">자세히 보기</a>
+            </div>
+            <div class="main_visual_turn">
+                <div class="main_visual_num">
+                    <span class="now_num">1</span>
+                    /
+                    <span class="total_num">5</span>
+                </div>
+                <div class="main_visual_arrow">
+                    <a href="#"><img src="images/left_btn_white.png" alt="이전 이미지" class="main_left_btn"></a>
+                    <a href="#"><img src="images/right_btn_white.png" alt="다음 이미지" class="main_right_btn"></a>
+
+                </div>
+                <style>
+                    .main_visual_area {
+                        position: relative;
+                    }
+
+                    .main_visual_turn {
+                        position: absolute;
+                        top: 200px;
+                        right: 300px;
+                    }
+
+                    .now_num {
+                        font-size: 40px;
+                        font-weight: 700;
+                    }
+
+                    .total_num {
+                        font-size: 16px;
+                    }
+
+                    .main_left_btn {
+                        float: left;
+                        padding-left: 3px;
+                    }
+
+                    .main_right_btn {
+                        float: right;
+                        padding-right: 3px;
+                    }
+
+                </style>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!--메인 비주얼 영역 종료-->
+    <div class="page cont1">
+        <div class="inbox2" id="cont1">
+            <ul class="fbx cont1_bgc">
+                <li class="col-4 bgc3_1">
+                    <div class="pg2_c_txt">
+                        <img src="images/calendar_white.png">
+                        <h2>투명경영</h2>
+                        <p>세이브 더 칠드런의<br> 경영방칙을 소개합니다.</p>
+                        <div class="pg2_c_txt_btn">자세히 보기</div>
+                    </div>
+                </li>
+                <li class="col-4 bgc3_2">
+                    <div class="pg2_c_txt">
+                        <img src="images/human_white.png">
+                        <h2>후원</h2>
+                        <p>정기후원부터 기부까지<br>다양한 후원시스템을 만나보세요</p>
+                        <div class="pg2_c_txt_btn">자세히 보기</div>
+                    </div>
+                </li>
+                <li class="col-4 bgc3_3">
+                    <div class="pg2_c_txt">
+                        <img src="images/heart_white.png">
+                        <h2>나눔이야기</h2>
+                        <p>주변이웃들과 함께하는<br>나눔사례에 대해 알아보세요</p>
+                        <div class="pg2_c_txt_btn">자세히 보기</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="page cont2 pg3">
+        <div class="inbox" id="cont2">
+            <a href="#">
+                <img src="images/pg3_bgc_3.jpg" alt="유튜브 영상 재생" class="youtube_img">
+            </a>
+        </div>
+    </div>
+    <div class="page cont3">
+        <div class="inbox" id="cont3">
+            <ul class="fbx cont3ul">
+                <!--                <li class="col-12 co1"></li>-->
+                <li class="col-6 main_left_box co2">
+                    <div class="news_img_wrap"></div>
+                    <div class="news_txt_wrap">
+                        <div class="news_txt_area">
+                            <h3 class="pg4_header_txt">영상자료</h3>
+                            <p>유튜브 아동인권 보호 캠페인 '아이가 행복한 유튜브 만들기'</p>
+                            <span>
+                                귀엽고 사랑스러운 유튜브 속 아이들.하지만 촬영 과정에서 어른들 모르게힘들어했던 아이들이 있진 않았을까요?
+                            </span>
+                        </div>
+                        <a href="#" class="view_more_btn">
+                            <span>자세히<br>보기</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="col-6 co2">
+                    <div class="main_right_box">
+                        <h3 class="pg4_header_txt">뉴스레터</h3>
+                        <a href="#">더보기</a>
+                        <ul id="newsletter">
+
+                        </ul>
+                    </div>
+                </li>
+                <!--                <li class="col-12 co3"></li>-->
+            </ul>
+        </div>
+    </div>
+    <!--푸터 영역 시작-->
+    <div class="page info">
+        <div class="inbox" id="info">
+            <ul class="fbx">
+                <li class="col-12 ih1" id="siteclick">
+                    <div class="sitemap_btn">
+                        <p>사이트맵</p>
+                        <a class="sbtn">＋</a>
+                    </div>
+                </li>
+                <li class="col-12 sitemap_area" style="border:1px solid #fff; display: none;">
+                    <div class="sitemap_open_area">
+                        <dl class="sitemap_open_box">
+                            <dt>기관</dt>
+                            <dd>
+                                <p>기관</p>
+                                <ul class="sitemap_open">
+                                    <li><a href="#">세이브 더 칠드런 100주년</a></li>
+                                    <li><a href="#">세이브더칠드런 정신</a></li>
+                                    <li><a href="#">연혁/조직</a></li>
+                                    <li><a href="#">투명경영</a></li>
+                                    <li><a href="#">재정보고</a></li>
+                                    <li><a href="#">인사말</a></li>
+                                    <li><a href="#">홍보대사</a></li>
+                                    <li><a href="#">인재채용</a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl class="sitemap_open_box">
+                            <dt>사업</dt>
+                            <dd>
+                                <p>사업</p>
+                                <ul class="sitemap_open">
+                                    <li><a href="#">해외사업</a></li>
+                                    <li><a href="#">국내사업</a></li>
+                                    <li><a href="#">권리옹호</a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl class="sitemap_open_box">
+                            <dt>후원</dt>
+                            <dd>
+                                <p>후원</p>
+                                <ul class="sitemap_open">
+                                    <li><a href="#">해외결연후원</a></li>
+                                    <li><a href="#">정기후원</a></li>
+                                    <li><a href="#">기업·단체후원</a></li>
+                                    <li><a href="#">고액·유산기부</a></li>
+                                    <li><a href="#">기념일기부</a></li>
+                                    <li><a href="#">선물가게</a></li>
+                                    <li><a href="#">후원가이드</a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl class="sitemap_open_box">
+                            <dt>캠페인</dt>
+                            <dd>
+                                <p>캠페인</p>
+                                <ul class="sitemap_open">
+                                    <li><a href="#">캠페인</a></li>
+                                    <li><a href="#">후원자프로그램</a></li>
+                                    <li><a href="#">착한소비</a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl class="sitemap_open_box">
+                            <dt>소식</dt>
+                            <dd>
+                                <p>소식</p>
+                                <ul class="sitemap_open">
+                                    <li><a href="#">나눔이야기</a></li>
+                                    <li><a href="#">소식지</a></li>
+                                    <li><a href="#">연차보고서</a></li>
+                                    <li><a href="#">뉴스레터</a></li>
+                                    <li><a href="#">동영상</a></li>
+                                    <li><a href="#">보고서</a></li>
+                                    <li><a href="#">공지/뉴스</a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+
+                </li>
+                <li class="col-12 ih2 go_site">
+                    <ul class="go_site_icon">
+                        <li><a href="#"><img src="images/sns1.png" alt="네이버 블로그 바로가기"></a></li>
+                        <li><a href="#"><img src="images/sns2.png" alt="페이스북 바로가기"></a></li>
+                        <li><a href="#"><img src="images/sns3.png" alt="인스타그램 바로가기"></a></li>
+                        <li><a href="#"><img src="images/sns4.png" alt="트위터 바로가기"></a></li>
+                        <li><a href="#"><img src="images/sns5.png" alt="유튜브 바로가기"></a></li>
+                    </ul>
+
+                    <!-- <div class="select_box_1">
+                        <p>
+                            <a href="https://www.savethechildren.net/" target="_blank">Save the Children International</a>
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="savethechildren.org.au" target="_blank">Australia</a>
+                            </li>
+                            <li>
+                                <a href="http://www.savethechildren.ca/" target="_blank">Canada</a>
+                            </li>
+                            <li>
+                                <a href="https://redbarnet.dk/" target="_blank">Denmark</a>
+                            </li>
+                            <li>
+                                <a href="https://savethechildren.org.do/" target="_blank">Dominican Republic</a>
+                            </li>
+                        </ul>
+                    </div>-->
+                </li>
+                <li class="col-12 ih3">
+                    <ul class="footer_1">
+                        <li>이용약관</li>
+                        <li>이메일 집단수신거부</li>
+                        <li>인재채용</li>
+                        <li>오시는길</li>
+                        <li>FAQ</li>
+                    </ul>
+                    <div class="footer_2">
+                        <p class="footer_informaiton">
+                            <strong>대표이사</strong><span>이순형</span>
+                            <strong>사업자번호</strong><span>105-82-03569</span>
+                            <strong>대표자</strong><span>오준</span>
+                            <strong>Fax</strong><span>02-6900-4499</span>
+                            <strong>대표이사</strong><span>이순형</span>
+                            <a href="#">개인정보처리방침</a>
+                            <br><strong>본사</strong><span>세이브더칠드런코리아 (우)04080 서울특별시 마포구 토정로 174</span>
+
+                        </p>
+                        <span class="copyright">Copyright © Save the Children Korea All Rights Reserved.</span>
+                    </div>
+            </ul>
+        </div>
+    </div>
+    <!--푸터 영역 종료-->
+
+
+    <!--레이아웃일반
+    1. 2중 박스구조로 큰 레이아웃 구분으로 div를 작성
+    2. 각 파티션을 col- 클래스로 구현
+    3. 각 파트별 타이틀을 달아줌
+    4. 파티션을 ul>li로 구성함
+-->
+
+
+
+    <!--그리드뷰-->
+    <ul class="grid">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+
+
+
+
+
+</body>
+
+</html>
+<script src="js/main.js"></script>
+<script src="js/main2.js"></script>

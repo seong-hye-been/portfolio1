@@ -1,0 +1,359 @@
+@charset "utf-8";
+/* main.css - 메인페이지 CSS */
+
+/*파일 merging(합치기)*/
+@import url(reset.css);
+@import url(core.css);
+@import url(common.css);
+@import url(gridSetFlex.css);
+@import url(gridView.css);
+
+
+/*배너영역*/
+#ban {
+    background: url(../images/main_visual_1.jpg) no-repeat 0/cover;
+}
+
+
+/*메인 페이지 전용 디자인*/
+.ban {
+    position: relative;
+    color: #fff;
+}
+
+.main_title {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-70%);
+    height: 345px;
+    width: 700px;
+
+}
+
+.main_title > h1 {
+    font-size: 5.1rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    line-height: 7rem;
+}
+
+.main_title > p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-left: 11px;
+
+}
+
+
+
+.main_visual_show {
+    background-color: #da281f;
+    display: inline-block;
+    height: 48px;
+    width: 180px;
+    text-align: center;
+    color: #fff;
+    border-radius: 6px;
+    line-height: 45px;
+    position: absolute;
+    left: 10px;
+    bottom: -27px;
+}
+
+/* 2페이지 3등분 영역 */
+
+.nop > li {
+    padding: 0;
+}
+
+/*백그라운드이미지 채도낮추기 및 변경*/
+
+
+
+.cont1_bgc li {
+    position: relative;
+}
+
+.cont1_bgc li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #da281f;
+    opacity: 0;
+    transition: all .3s;
+
+}
+
+.cont1_bgc li:hover::after {
+    opacity: .8;
+    z-index: 1;
+    
+}
+.cont1_bgc li:hover .pg2_c_txt_btn {
+    display: block;
+    
+}
+
+
+
+
+.bgc3_1 {
+    background: url(../images/temporary11.jpg) no-repeat 50% 0/cover;
+    position: relative;
+}
+
+.bgc3_2 {
+    background: url(../images/temporary5.jpg) no-repeat 80% 0/cover;
+    position: relative;
+
+}
+
+.bgc3_3 {
+    background: url(../images/temporary3.jpg) no-repeat 70% 0/cover;
+    position: relative;
+}
+
+/* 2페이지 등분 안 텍스트*/
+.pg2_c_txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 300px;
+    color: #fff;
+z-index: 3;
+}
+
+.pg2_c_txt img {
+    width: 101px;
+    height: 98px;
+}
+
+.pg2_c_txt h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.pg2_c_txt p {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.3rem;
+}
+
+
+
+.pg2_c_txt_btn {
+    background-color: #fff;
+    color: #da281f;
+    width: 180px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 6px;
+    margin-top: 30px;
+    display: none;
+}
+
+
+/* 유튜브 영역 */
+.pg3 {
+    background: url(../images/pg3_bgc_2.jpg) no-repeat 0/cover;
+    position: relative;
+}
+
+
+.youtube_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* 마지막 페이지 */
+.cont3{
+    position: relative;
+    height: 100%;
+}
+.cont3ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 800px;
+    
+    
+}
+.cont3ul li{
+    overflow: hidden;
+}
+
+.main_left_box {
+    padding: 0;
+    padding-top: 10px;
+    position: relative;
+
+
+}
+
+.main_right_box {
+    /* 2 추가한다 !!!*/
+    box-sizing: border-box;
+    padding: 0;
+    padding-left: 60px;
+    border-left: 1px solid #ccc;
+
+}
+
+.news_img_wrap {
+    width: 700px;
+    height: 560px;
+    background: url(../images/movie_news_1.jpg)no-repeat 0/cover;
+    margin-bottom: 50px;
+}
+
+
+.news_txt_wrap {
+    width: 720px;
+
+
+}
+
+.news_txt_area {
+    width: 570px;
+    float: left;
+    
+}
+
+.pg4_header_txt {
+    color: #da281f;
+
+
+}
+
+.pg4_header_txt::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #da281f;
+    width: 48px;
+    height: 2px;
+    top: 50%;
+    left: 73px;
+    transform: translateY(-50%; );
+
+
+}
+
+.news_txt_wrap p {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #222;
+    width: 570px;
+    line-height: 2.6rem;
+    margin: 15px 0;
+    
+
+}
+
+.news_txt_wrap span {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    font-size: 1.125rem;
+    color: #666;
+}
+
+
+.view_more_btn {
+    width: 120px;
+    height: 120px;
+    background-color: #da281f;
+    border-radius: 50%;
+    display: block;
+    color: #fff;
+    text-align: center;
+    float: right;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+}
+
+.view_more_btn span {
+    display: inline-block;
+    color: #fff;
+    line-height: 1.5rem;
+    width: 50px;
+    padding-top: 34px;
+
+}
+
+
+.co1 {
+    height: 50px;
+}
+
+.co2 {
+    height: 100%;
+}
+
+.co3 {
+    height: 50px;
+}
+
+
+/* 4페이지 우측 박스 */
+
+.newsletter_list {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+#newsletter {}
+
+.newsletter_txt {
+    font-size: 1rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 321px;
+    box-sizing: border-box;
+    padding: 25px 0;
+}
+
+.newsletter_img {
+    height: 158px;
+    width: 280px;
+    margin-right: 20px;
+}
+
+.newsletter_title {
+    font-size: 1.5rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+
+
+
+.newsletter_content {
+    font-size: 1rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: 400;
+}
